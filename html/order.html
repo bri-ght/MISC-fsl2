@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Indian Food</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Indian Food" title="Indian Food Logo">
+        </div>
+        <nav>
+            <ul>
+              <li><a href="/html/index.html" title="Home Page">Home</a></li>
+              <li><a href="/html/menu.html" title="Menu Page">Menu</a></li>
+              <li><a href="/html/order.html" title="Order Page">Order</a></li>
+              <li><a href="/html/about.html" title="About Page">About Us</a></li>
+              <li><a href="/html/account.html" title="Account Page">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body id="orderBody">
+        <section class="banner">
+            <h1>Order</h1>
+        </section>
+        <section class="orderContainer">
+            <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <div id="flexContainer">
+                        <fieldset>
+                        <legend>Order</legend>
+                        <div id="orderDiv">
+                            <div id="orderItems">
+                                <img src="/images/orderBriyani.png" alt="briyani" title="Briyani"><br/>
+                                <label id="briyani">Briyani: </label><br/>
+                                <input name="1briyani" type="checkbox" value="Plain" />Plain $3.00 &nbsp;
+                                <input name="1quantity" type="number" min="1" max="15"/><br/>
+                                <input name="2briyani" type="checkbox" value="Egg" />Egg $3.60 &nbsp;
+                                <input name="2quantity" type="number" min="1" max="15"/><br/>
+                                <input name="3briyani" type="checkbox" value="Chicken" />Chicken $4.80 &nbsp;
+                                <input name="3quantity" type="number" min="1" max="15"/><br/>
+                                <input name="4briyani" type="checkbox" value="Fish" />Fish $4.80 &nbsp;
+                                <input name="4quantity" type="number" min="1" max="15"/><br/>
+                                <input name="5briyani" type="checkbox" value="Mutton" />Mutton $5.80 &nbsp;
+                                <input name="5quantity" type="number" min="1" max="15"/><br/>
+                            </div><br/>
+                            <div id="orderItems">
+                                <img src="/images/orderGoreng.jpg" alt="goreng" title="goreng"><br/>
+                                <label id="goreng">Goreng: </label><br/>
+                                <input name="6goreng" type="checkbox" value="Mee" />Mee $3.50 &nbsp;
+                                <input name="6quantity" type="number" min="1" max="15"/><br/>
+                                <input name="7goreng" type="checkbox" value="Nasi" />Nasi $3.50 &nbsp;
+                                <input name="7quantity" type="number" min="1" max="15"/><br/>
+                                <input name="8goreng" type="checkbox" value="KwayTeow" />Kway Teow $3.50 &nbsp;
+                                <input name="8quantity" type="number" min="1" max="15"/><br/>
+                                <input name="9goreng" type="checkbox" value="MeeHoon" />Mee Hoon $3.50 &nbsp;
+                                <input name="9gorengquantity" type="number" min="1" max="15"/><br/>
+                                <input name="10goreng" type="checkbox" value="Maggi" />Maggi $3.50 &nbsp;
+                                <input name="10quantity" type="number" min="1" max="15"/><br/>
+                                <input name="11goreng" type="checkbox" value="Prata" />Prata $3.50 &nbsp;
+                                <input name="11quantity" type="number" min="1" max="15"/><br/>
+                            </div><br/>
+                            <div id="orderItems">
+                                <img src="/images/orderThosai.jpg" alt="thosai" title="Thosai"><br/>
+                                <label id="thosai">Thosai: </label><br/>
+                                <input name="12thosai" type="checkbox" value="Plain" />Plain $1.50 &nbsp;
+                                <input name="12quantity" type="number" min="1" max="15"/><br/>
+                                <input name="13thosai" type="checkbox" value="Paper" />Paper $1.70 &nbsp;
+                                <input name="13quantity" type="number" min="1" max="15"/><br/>
+                                <input name="14thosai" type="checkbox" value="Onion" />Onion $1.90 &nbsp;
+                                <input name="14quantity" type="number" min="1" max="15"/><br/>
+                                <input name="15thosai" type="checkbox" value="Egg" />Egg $2.00 &nbsp;
+                                <input name="15quantity" type="number" min="1" max="15"/><br/>
+                                <input name="16thosai" type="checkbox" value="Cheese" />Cheese $2.30 &nbsp;
+                                <input name="16quantity" type="number" min="1" max="15"/><br/>
+                                <input name="17thosai" type="checkbox" value="Ghee" />Ghee $2.30 &nbsp;
+                                <input name="17quantity" type="number" min="1" max="15"/><br/>
+                                <input name="18thosai" type="checkbox" value="Mushroom" />Mushroom $2.30 &nbsp;
+                                <input name="18quantity" type="number" min="1" max="15"/><br/>
+                                <input name="19thosai" type="checkbox" value="MushroomCheese" />Mushroom Cheese $3.50 &nbsp;
+                                <input name="19quantity" type="number" min="1" max="15"/><br/>
+                                <input name="20thosai" type="checkbox" value="Masala" />Masala $2.50 &nbsp;
+                                <input name="20quantity" type="number" min="1" max="15"/><br/>
+                                <input name="21thosai" type="checkbox" value="MasalaPaper" />Masala Paper $2.50 &nbsp;
+                                <input name="21quantity" type="number" min="1" max="15"/><br/>
+                                <input name="22thosai" type="checkbox" value="MasalaOnion" />Masala Onion $2.50 &nbsp;
+                                <input name="22quantity" type="number" min="1" max="15"/><br/>
+                                <input name="23thosai" type="checkbox" value="MasalaGhee" />Masala Ghee $3.00 &nbsp;
+                                <input name="23quantity" type="number" min="1" max="15"/><br/>
+                                <input name="24thosai" type="checkbox" value="MasalaCheese" />Masala Cheese $3.30 &nbsp;
+                                <input name="24quantity" type="number" min="1" max="15"/><br/>
+                                <input name="25thosai" type="checkbox" value="MasalaMushroomCheese" />Masala Mushroom Cheese $3.20 &nbsp;
+                                <input name="25quantity" type="number" min="1" max="15"/><br/>
+                                <input name="26thosai" type="checkbox" value="EggOnion" />Egg Onion $2.50 &nbsp;
+                                <input name="26quantity" type="number" min="1" max="15"/><br/>
+                                <input name="27thosai" type="checkbox" value="EggMasala" />Egg Masala $2.80 &nbsp;
+                                <input name="27quantity" type="number" min="1" max="15"/><br/>
+                                <input name="28thosai" type="checkbox" value="EggCheese" />Egg Cheese $3.00 &nbsp;
+                                <input name="28quantity" type="number" min="1" max="15"/><br/>
+                                <input name="29thosai" type="checkbox" value="EggMushroom" />Egg Mushroom $3.00 &nbsp;
+                                <input name="29quantity" type="number" min="1" max="15"/><br/>
+                                <input name="30thosai" type="checkbox" value="EggMushroomCheese" />Egg Mushroom Cheese $4.00 &nbsp;
+                                <input name="30quantity" type="number" min="1" max="15"/><br/>
+                                <input name="31thosai" type="checkbox" value="EggMasalaOnion" />Egg Masala Onion $3.30 &nbsp;
+                                <input name="31quantity" type="number" min="1" max="15"/><br/>
+                                <input name="32thosai" type="checkbox" value="EggMasalaCheese" />Egg Masala Cheese $3.90 &nbsp;
+                                <input name="32quantity" type="number" min="1" max="15"/><br/>
+                                <input name="33thosai" type="checkbox" value="EggMasalaMushroom" />Egg Masala Mushroom $3.80 &nbsp;
+                                <input name="33quantity" type="number" min="1" max="15"/><br/>
+                            </div><br/>
+                            <div id="orderItems">
+                                <img src="/images/orderPrata.png" alt="prata" title="Prata"><br/>
+                                <label id="prata">Prata: </label><br/>
+                                <input name="34prata" type="checkbox" value="Plain" />Plain $1.00 &nbsp;
+                                <input name="34quantity" type="number" min="1" max="15"/><br/>
+                                <input name="35prata" type="checkbox" value="Egg" />Egg $1.80 &nbsp;
+                                <input name="35quantity" type="number" min="1" max="15"/><br/>
+                                <input name="36prata" type="checkbox" value="EggOnion" />Egg Onion $2.00 &nbsp;
+                                <input name="36quantity" type="number" min="1" max="15"/><br/>
+                                <input name="37prata" type="checkbox" value="EggCheese" />Egg Cheese $2.50 &nbsp;
+                                <input name="37quantity" type="number" min="1" max="15"/><br/>
+                                <input name="38prata" type="checkbox" value="Cheese" />Cheese $1.80 &nbsp;
+                                <input name="38quantity" type="number" min="1" max="15"/><br/>
+                                <input name="39prata" type="checkbox" value="Onion" />Onion $1.50 &nbsp;
+                                <input name="39prataquantity" type="number" min="1" max="15"/><br/>
+                                <input name="40prata" type="checkbox" value="OnionCheese" />Onion Cheese $2.30 &nbsp;
+                                <input name="41quantity" type="number" min="1" max="15"/><br/>
+                                <input name="42prata" type="checkbox" value="DoubleEgg" />Double Egg $2.00 &nbsp;
+                                <input name="43quantity" type="number" min="1" max="15"/><br/>
+                                <input name="44prata" type="checkbox" value="DoubleEggOnion" />Double Egg Onion $2.50 &nbsp;
+                                <input name="45quantity" type="number" min="1" max="15"/><br/>
+                                <input name="46prata" type="checkbox" value="DoubleEggCheese" />Double Egg Cheese $3.00 &nbsp;
+                                <input name="46quantity" type="number" min="1" max="15"/><br/>
+                                <input name="47prata" type="checkbox" value="DoubleCheese" />Double Cheese $2.70 &nbsp;
+                                <input name="47quantity" type="number" min="1" max="15"/><br/>
+                                <input name="48prata" type="checkbox" value="Banana" />Banana $1.90 &nbsp;
+                                <input name="48quantity" type="number" min="1" max="15"/><br/>
+                                <input name="49prata" type="checkbox" value="Mushroom" />Mushroom $1.80 &nbsp;
+                                <input name="49quantity" type="number" min="1" max="15"/><br/>
+                                <input name="50prata" type="checkbox" value="EggMushroom" />Egg Mushroom $2.50 &nbsp;
+                                <input name="50quantity" type="number" min="1" max="15"/><br/>
+                                <input name="51prata" type="checkbox" value="MushroomCheese" />Mushroom Cheese $3.00 &nbsp;
+                                <input name="51quantity" type="number" min="1" max="15"/><br/>
+                                <input name="52prata" type="checkbox" value="Milky" />Milky $1.90 &nbsp;
+                                <input name="52quantity" type="number" min="1" max="15"/><br/>
+                                <input name="53prata" type="checkbox" value="Strawberry" />Strawberry $1.80 &nbsp;
+                                <input name="53quantity" type="number" min="1" max="15"/><br/>
+                                <input name="54prata" type="checkbox" value="Chocolate" />Chocolate $1.80 &nbsp;
+                                <input name="54quantity" type="number" min="1" max="15"/><br/>
+                                <input name="55prata" type="checkbox" value="Hotdog" />Hotdog $2.00 &nbsp;
+                                <input name="55quantity" type="number" min="1" max="15"/><br/>
+                                <input name="56prata" type="checkbox" value="HotdogCheese" />Hotdog Cheese #3.00 &nbsp;
+                                <input name="56quantity" type="number" min="1" max="15"/><br/>
+                                <input name="57prata" type="checkbox" value="RotiBomb" />Roti Bomb $1.70 &nbsp;
+                                <input name="57quantity" type="number" min="1" max="15"/><br/>
+                                <input name="58prata" type="checkbox" value="Plaster" />Plaster $1.80 &nbsp;
+                                <input name="58quantity" type="number" min="1" max="15"/><br/>
+                                <input name="59prata" type="checkbox" value="Tissue" />Tissue $2.50 &nbsp;
+                                <input name="59quantity" type="number" min="1" max="15"/><br/>
+                                <input name="60prata" type="checkbox" value="Coin" />Coin $3.00 &nbsp;
+                                <input name="60quantity" type="number" min="1" max="15"/><br/>
+                            </div><br/>
+                            <div id="orderItems">
+                                <img src="/images/orderMurtabak.jpg" alt="murtabak" title="murtabak"><br/>
+                                <label id="murtabak">Murtabak: </label><br/>
+                                <input name="61murtabak" type="checkbox" value="Murtabak" />Murtabak $4.00 &nbsp;
+                                <input name="61quantity" type="number" min="1" max="15"/><br/>
+                                <input name="62murtabak" type="checkbox" value="Mutton" />Mutton $4.00 &nbsp;
+                                <input name="62quantity" type="number" min="1" max="15"/><br/>
+                                <input name="63murtabak" type="checkbox" value="Chicken" />Chicken $4.00 &nbsp;
+                                <input name="63quantity" type="number" min="1" max="15"/><br/>
+                            </div><br/>
+                            <div id="orderItems">
+                                <label id="others">Others: </label><br/>
+                                <input name="64others" type="checkbox" value="Pappadam" />Pappadam $0.50 &nbsp;
+                                <input name="64quantity" type="number" min="1" max="15"/><br/>
+                                <input name="65others" type="checkbox" value="RotiJohn" />Roti John $2.50 &nbsp;
+                                <input name="65quantity" type="number" min="1" max="15"/><br/>
+                                <input name="66others" type="checkbox" value="IndianRojak" />Indian Rojak $1.00 &nbsp;
+                                <input name="66quantity" type="number" min="1" max="15"/><br/>
+                            </div><br/>
+                        </fieldset>
+                        </div>  
+                        <fieldset>
+                            <legend>Payment</legend>
+                                <div>
+                                    <label>Name: </label>
+                                    <input name="name" type="text" pattern="[A-Za-z]{5-50}"
+                                        title="Between 5 to 50 characters only" required placeholder="Type your full name here"/>
+                                </div>
+                                <div>
+                                    <label>Email: </label>
+                                    <input name="email" type="email" required placeholder="Type your email address here"/>
+                                </div>
+                                <div>
+                                    <label>Address: </label><br/>
+                                    <textarea name="address" rows="3" cols="30"
+                                    required placeholder="Your home address"></textarea>
+                                </div>
+                                <div>
+                                    <label>Cardholder Name: </label>
+                                    <input name="card_name" type="text" pattern="[A-Za-z]{5-50}"
+                                    title="Between 5 to 50 characters only" required placeholder="Type your full name here"/>
+                                </div>
+                                <div>
+                                    <label>Card Number: </label>
+                                    <input type="text" id="credit_card" name="card_number" pattern="[0-9]{16}" 
+                                    placeholder="Enter 16 digits" required>
+                                </div>
+                                <div>
+                                    <label>Expiry Date: </label>
+                                    <select id="expiry_month" name="expiry_month" required>
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select id="expiry_year" name="expiry_year" required>
+                                        <option value="24">2024</option>
+                                        <option value="25">2025</option>
+                                        <option value="26">2026</option>
+                                        <option value="27">2027</option>
+                                        <option value="28">2028</option>
+                                        <option value="29">2029</option>
+                                        <option value="30">2030</option>
+                                        <option value="31">2031</option>
+                                        <option value="32">2032</option>
+                                        <option value="33">2033</option>
+                                        <option value="34">2034</option>
+                                        <option value="35">2035</option>
+                                        <option value="36">2036</option>
+                                        <option value="37">2037</option>
+                                        <option value="38">2038</option>
+                                        <option value="39">2039</option>
+                                        <option value="40">2040</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="cvv">CVV:</label>
+                                    <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="Enter 3 digits" required>
+                                </div>
+                        </fieldset>
+                    <footer class="orderFooter">
+                        <button type="submit">Confirm</button>
+                        <button type="reset">Cancel</button>
+                    </footer>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div class="copyright">
+                <p>&copy; 2024 Indian Food. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

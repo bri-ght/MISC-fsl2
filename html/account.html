@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Indian Food</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Indian Food">
+        </div>
+        <nav>
+            <ul>
+              <li><a href="/html/index.html" title="Home Page">Home</a></li>
+              <li><a href="/html/menu.html" title="Menu Page">Menu</a></li>
+              <li><a href="/html/order.html" title="Order Page">Order</a></li>
+              <li><a href="/html/about.html" title="About Page">About Us</a></li>
+              <li><a href="/html/account.html" title="Account Page">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body id="accountBody">
+        <section class="banner">
+            <h1>Member Registration</h1>
+        </section>
+        <main id="accountMain">
+            <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <div id="flex-container">
+                    <fieldset>  
+                        <div>
+                            <label>LoginID: </label>
+                            <input name="loginid" type="text" pattern="[A-Za-z]{5-50}"
+                            required pattern="[A-Za-z]{4-8}" title="5-50 characters" placeholder="Create LoginID here"/>
+                        </div>
+                        <div>
+                            <label>Name: </label>
+                            <input name="studname" type="text" pattern="[A-Za-z]{5-50}"
+                            title="Between 5 to 50 characters only" required placeholder="Type your full name here"/>
+                        </div>
+                        <div>
+                            <label>Password: </label>
+                            <input type="password" name="pwd" required 
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}" 
+                            title="must be at least 10 characters with strong password requirement" placeholder="Create password here"/>
+                            <span id="password"><br/><span id="star">*</span> At least 10 characters. <br/>
+                            <span id="star">*</span> A combination of uppercase letters, lowercase letters, numbers, and symbols.</span>
+                        </div>
+                        <div>
+                            <label>Mobile Number: </label>
+                            <input name="mobileno" type="tel" required pattern="[9,8]{1}[0-9]{7}"
+                            title="Please enter 8 digits for mobile no starting with 8 or 9"/>
+                        </div>
+                        <div>
+                            <label>Gender : </label>
+                            <input name="gender" type="radio" value="M" checked="checked" required/>Male &nbsp;&nbsp;
+                            <input name="gender" type="radio" value="F" />Female
+                        </div>
+                        <div>
+                            <label>Personal email address: </label>
+                            <input name="email" type="email" required placeholder="Type your email address here"/>
+                        </div>
+                        <div>
+                            <label>Address: </label><br />
+                            <textarea name="feedback" rows="3" cols="30"
+                            required placeholder="Your home address" ></textarea>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                            <div>
+                                <label>Favourite Food: </label><br/>
+                                <textarea name="feedback" rows="3" cols="30"required pattern="[A-Za-z]"></textarea>
+                            </div>
+                    </fieldset>
+                </div>
+                <footer class="orderFooter">
+                    <button type="submit">Register</button>
+                    <button type="reset">Cancel</button>
+                </footer>
+            </form>
+        </main>
+        <footer>
+            <div class="copyright">
+                <p>&copy; 2024 Indian Food. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
